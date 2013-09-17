@@ -1,6 +1,9 @@
 package com.faacets
 package matlab
 
+import alg.immutable._
+import spire.math.Rational
+
 object MatlabHelpers {
   def repr(r: String): Repr = r match {
     case "FRepr" => FRepr
@@ -12,4 +15,6 @@ object MatlabHelpers {
     case "QRepr" => SRepr
     case _ => throw new IllegalArgumentException("Illegal Repr name: " + r)
   }
+  def immutableQVector(longArray: Array[Long], commonDenominator: Long): alg.immutable.QVector =
+    QVector(longArray.map(Rational(_,commonDenominator)))
 }
