@@ -43,7 +43,6 @@ ineq2 = ineq.canonicalize;
 ineq3 = javaMethod('_1', ineq2);
 
 ineq4 = ineq3.as(frepresentation).coeffs.longCoefficients; % These are the coefficients
-ineq4 = ineq3.as(fRepresentation('NGRepr')).coeffs.longCoefficients; % These are the coefficients
 
 ineq5 = tupleRational2vector(ineq4); % the numerators / the denominator
 
