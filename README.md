@@ -1,6 +1,11 @@
-faacets-matlab
-==============
+Faacets-matlab: a matlab interface to the faacets library
+=========================================================
 
-Matlab interface to Faacets
+This folder contains an implementation of the faacets library (c.f. http://www.faacets.com ) in *.jar format. 
 
-The folder to be used in matlab is 'matlabFolder'. If this folder is not present, or if changes are made to the scala code, it must be created/updated with the command 'prepareMatlabFolder.sh'. To transfer changes made to the matlab files containted in 'matlabFolder' back to the matlab source code of reference (in 'src/matlab'), run program 'updateSourceFromMatlabFolder.sh'.
+* The 'example' folder contains three example files showing possible usage of this library from matlab.
+* The 'inequalities' folder contains some example of inequalities in yaml format
+* The library is contained in the file Faacets-assembly-*.jar
+
+A description of the operations performed by the library is available at http://www.arxiv.org (in preparation).
+

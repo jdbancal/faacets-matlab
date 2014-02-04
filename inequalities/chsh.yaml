@@ -1,0 +1,22 @@
+type: Inequality
+bra:
+  scenario: '{[2 2] [2 2]}'
+  representation: Non-signaling Correlators
+  coefficients: [0, 0, 0, 0, 1, -1, 0, 1, 1]
+  generators:
+    outputPerm: ['A1(1,2) A2(1,2) B1(1,2) B2(1,2)']
+    outputInputPerm: ['A2(1,2) B(1,2)', 'B1(1,2) A(1,2)']
+    rest: ['A(1,2) B(1,2) (A,B)']
+  representatives: 8
+shortName: CHSH
+names: [Clauser-Horne-Shimony-Holt inequality]
+facetOf: {local: true}
+bounds: {local: x <= 2, quantum: 'x <= [2.828427124746190, 2.828427124746191]', nosignaling: x <= 4,
+  ten_percents_nonfree_settings: x <= 2.2}
+sources:
+  bounds.local: ['doi:10.1103/PhysRevLett.23.880']
+  bounds.quantum: ['doi:10.1007/BF00417500', 'http://www.tau.ac.il/~tsirel/download/qbell80.html']
+  extra.detection_loophole: ['doi:10.1103/PhysRevA.47.R747']
+  extra.detection_loophole_singlet: ['doi:10.1111/j.1749-6632.1986.tb12444.x', 'doi:10.1103/PhysRevD.35.3831']
+detection_loophole: eta_c = 2/3
+detection_loophole_singlet: eta_c = [0.8284271247461901, 0.8284271247461902]

@@ -1,0 +1,16 @@
+type: Inequality
+bra:
+  scenario: '{[2 2 2] [2 2 2]}'
+  representation: Non-signaling Collins-Gisin
+  coefficients: [0, -2, -1, 0, -1, 1, 1, 1, 0, 1, 1, -1, 0, 1, -1, 0]
+  generators:
+    outputInputPerm: ['A3(1,2) B(1,2)', 'B3(1,2) A(1,2)']
+    rest: ['A1(1,2) A2(1,2) B1(1,2) B2(1,2) A(1,2) B(1,2) (A,B)']
+  representatives: 576
+shortName: I3322
+names: [Froissart inequality]
+facetOf: {local: true}
+bounds: {local: x <= 0, quantum: 'x <= [0.250875384514, 0.25087539]'}
+sources:
+  bounds.local: ['doi:10.1007/BF02903286']
+  bounds.quantum: ['doi:10.1103/PhysRevA.82.022116', 'arXiv:1006.3032']
